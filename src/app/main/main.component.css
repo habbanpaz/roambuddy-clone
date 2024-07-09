@@ -1,0 +1,156 @@
+.background-div {
+  width: 80%;
+  height: 800px;
+  /* Adjust the height as needed */
+  background-image: url("../../assets/roambuddy_hero.jpg");
+  background-size: cover;
+  /* Cover the entire div */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Prevent repeating the image */
+  color: white;
+  /* Text color to contrast with the background */
+  padding-left: 50px;
+  padding-top: 100px;
+  padding-right: 40%;
+  margin: auto;
+
+}
+
+.testimonials{
+  margin-bottom: 50px;
+}
+
+.testimonials-background {
+  width: 80%;
+  margin: auto;
+  background-color: #01DB5D;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.testimonial-card {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.testimonial-header {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+
+.testimonial-author {
+  font-weight: bold;
+  text-align: left;
+}
+
+
+.data-plans {}
+
+.load-more-button {
+  width: 30%;
+  background-color: #808080;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #fff;
+  border-width: 0;
+  height: 40px;
+  font-size: large;
+  border-radius: 5px;
+
+}
+
+.resizable-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  background-color: #e5e5e5;
+  transition: height 0.3s ease;
+  margin: auto;
+  border-radius: 25px;
+  padding: 20px;
+
+}
+
+.search-container {
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  /* Adjust the height as needed */
+  background-color: #ebebeb;
+  border-radius: 5px;
+  border-width: 0;
+  padding-left: 15px;
+}
+
+.order-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
+
+.country img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.country-details {
+  margin-top: 20px;
+  text-align: center;
+}
