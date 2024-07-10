@@ -1,1 +1,30 @@
-<p>order-esim works!</p>
+<div>
+    <h1 style="text-align: center;margin-top: 50px; margin-bottom: 40px;">Search Data Plans for your destination </h1>
+    <form style="margin: auto; width: 60%;">
+        <input class="search-container">
+    </form>
+    <br>
+    <p style="text-align: center;">for unlocked</p>
+    <p style="text-align: center; font-weight: bold; color: #59d25d;"><a href="">for enabled devices</a></p>
+</div>
+<div class="resizable-div" [style.height.px]="currentHeight">
+    <div class="tabs">
+        <button class="tab">Country eSIM</button>
+        <button class="tab">Regional eSIM</button>
+        <button class="tab">Global eSIM</button>
+    </div>
+
+    <div class="country-list">
+        <div class="country" *ngFor="let country of countries" (click)="selectCountry(country)">
+            <div>
+                <img [src]="country.flag" alt="{{country.name}} flag">
+                <span>{{country.name}}</span>
+            </div>
+            <div>▼</div>
+        </div>
+    </div>
+
+
+
+    <button class="load-more-button" (click)="toggleSize()"> {{ isDefaultSize ? 'Show All Countries' : 'Hide All Countries' }}</button>
+</div>

@@ -12,6 +12,8 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { ActivateSimComponent } from './activate-sim/activate-sim.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app.routing.module';
+import { TestimonialsPageComponent } from './testimonials-page/testimonials-page.component';
+import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AppRoutingModule } from './app.routing.module';
     OrderEsimComponent,
     FaqsComponent,
     ActivateSimComponent,
-    ContactComponent
+    ContactComponent,
+    TestimonialsPageComponent,
+    OrderEsimPageComponent
   ],
   imports: [
     BrowserModule,

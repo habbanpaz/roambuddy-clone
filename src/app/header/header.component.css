@@ -16,3 +16,23 @@
   top: -10px;
   right: 10px;
 }
+
+.navbar{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navbar-nav{
+  margin-left: 25%;
+}
+
+.routing-btn{
+  margin-left: 5px;
+  border-radius: 50px;
+}
+
+.routing-btn:hover{
+  background-color: #01db5d;
+  color: white;
+  border-width: 0;
+}

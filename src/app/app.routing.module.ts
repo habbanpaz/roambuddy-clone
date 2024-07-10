@@ -6,19 +6,26 @@ import { ActivateSimComponent } from './activate-sim/activate-sim.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { ContactComponent } from './contact/contact.component';
+import { MainComponent } from './main/main.component';
+import { TestimonialsPageComponent } from './testimonials-page/testimonials-page.component';
+import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.component';
 
 const routes: Routes = [
 {
-  path: 'order-esim',
-  component: OrderEsimComponent
+  path: '',
+  component: MainComponent
+},
+{
+  path: 'order-esim-page',
+  component: OrderEsimPageComponent
 },
 {
   path: 'activate-sim',
   component: ActivateSimComponent
 },
 {
-  path: 'testimonials',
-  component: TestimonialsComponent
+  path: 'testimonials-page',
+  component: TestimonialsPageComponent
 },
 {
   path: 'faqs',

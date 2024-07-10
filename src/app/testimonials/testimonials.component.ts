@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestimonialService } from '../services/testimonial.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonials.component.css']
 })
 export class TestimonialsComponent implements OnInit {
+  testimonials: any[] = [];
 
-  constructor() { }
+  constructor(private testimonialService: TestimonialService) { }
 
   ngOnInit(): void {
+    this.testimonials = this.testimonialService.getTestimonial();
+
   }
 
 }

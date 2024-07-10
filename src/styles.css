@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.green-btn{
+    background-color: #01db5d;
+    color: #fff;
+    border-radius: 50px
+  }
+
+  .green-btn:hover {
+    background-color: #fff;
+    color: #01db5d;
+    border-width: 1;
+    border-color: #01db5d;
+  }
