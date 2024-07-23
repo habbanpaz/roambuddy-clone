@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { CountryService } from '../services/country.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-esim',
@@ -11,12 +12,20 @@ export class OrderEsimComponent implements OnInit {
   currentHeight = 400;
   countries: any[] = [];
   selectedCountry: any = null;
+  isModalVisible = false;
+  
 
-  constructor(private countryService: CountryService) { }
+  constructor(private countryService: CountryService, private router: Router, private renderer: Renderer2 ) { }
 
   ngOnInit(): void {
     this.loadCountries();
 
+  }
+
+  
+
+  openModal() {
+    this.isModalVisible = true;
   }
 
   toggleSize() {
@@ -47,5 +56,8 @@ export class OrderEsimComponent implements OnInit {
   selectCountry(country: any) {
     this.selectedCountry = country;
   }
+
+
+
 
 }

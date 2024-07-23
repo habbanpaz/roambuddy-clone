@@ -2,20 +2,29 @@
 
 </div>
 
-<form action="" style="margin: 5%;">
-    <p>Enter First Name *</p>
-    <input class="form-input" type="text" name="name" placeholder="Enter Name">
-    <p>Enter Last Name *</p>
-
-    <input class="form-input" type="password" name="password">
-    <p>Enter Email *</p>
-
-    <input class="form-input" type="text" name="email">
-
-    <p>Concerning *</p>
-
-    <input class="form-input" type="password" name="password">
-    <p>Message *</p>
-
-    <input class="form-input" type="text" name="email">
-</form>
+<div class="form-container">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstName">First Name <span class="required">*</span></label>
+        <input id="firstName" formControlName="firstName" placeholder="Enter First Name" />
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name <span class="required">*</span></label>
+        <input id="lastName" formControlName="lastName" placeholder="Enter Last Name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <input id="email" formControlName="email" placeholder="Enter Email Address" />
+      </div>
+      <div class="form-group">
+        <label for="concerning">Concerning</label>
+        <input id="concerning" formControlName="concerning" placeholder="Enter Concerning" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" formControlName="message" placeholder="Enter Your Message"></textarea>
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+  

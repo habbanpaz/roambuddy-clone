@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { OrderEsimComponent } from './order-esim/order-esim.component';
 import { ActivateSimComponent } from './activate-sim/activate-sim.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
 import { TestimonialsPageComponent } from './testimonials-page/testimonials-page.component';
 import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.component';
+import { GlobalEsimComponent } from './global-esim/global-esim.component';
+import { RegionalEsimComponent } from './regional-esim/regional-esim.component';
 
 const routes: Routes = [
 {
@@ -34,6 +34,14 @@ const routes: Routes = [
 {
   path: 'contact',
   component: ContactComponent
+},
+{
+  path: 'global-esim',
+  component: GlobalEsimComponent
+},
+{
+  path: 'regional-esim',
+  component: RegionalEsimComponent
 }
 
 ]

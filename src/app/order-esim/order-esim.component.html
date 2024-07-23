@@ -1,30 +1,71 @@
 <div>
     <h1 style="text-align: center;margin-top: 50px; margin-bottom: 40px;">Search Data Plans for your destination </h1>
-    <form style="margin: auto; width: 60%;">
-        <input class="search-container">
+    <form style="margin: auto; width: 40%;">
+        <input class="search-container" placeholder="Start searching by country (180+ countries included)">
     </form>
     <br>
     <p style="text-align: center;">for unlocked</p>
-    <p style="text-align: center; font-weight: bold; color: #59d25d;"><a href="">for enabled devices</a></p>
+    <p style="text-align: center; font-weight: bold; color: #59d25d;"><a>for enabled devices</a></p>
 </div>
 <div class="resizable-div" [style.height.px]="currentHeight">
     <div class="tabs">
-        <button class="tab">Country eSIM</button>
-        <button class="tab">Regional eSIM</button>
-        <button class="tab">Global eSIM</button>
+        <a class="btn btn-light btn-types btn-country">Country eSIM</a>
+        <a class="btn btn-light btn-types btn-regional">Regional eSIM</a>
+        <a class="btn btn-light btn-types">Global eSIM</a>
     </div>
 
+
     <div class="country-list">
-        <div class="country" *ngFor="let country of countries" (click)="selectCountry(country)">
+        <button class="country" *ngFor="let country of countries" (click)="selectCountry(country)">
             <div>
                 <img [src]="country.flag" alt="{{country.name}} flag">
                 <span>{{country.name}}</span>
+
             </div>
-            <div>▼</div>
+            <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px;">
+        </button>
+
+
+
+    </div>
+
+
+    <!-- New Div for Country Details -->
+
+    <div *ngIf="selectedCountry" class="offer-card">
+        <div class="offer-header">
+            <div class="offer-title">{{selectedCountry.name}} {{selectedCountry.duration}}D</div>
+            <div class="offer-countries">works in 106 countries</div>
+        </div>
+        <hr>
+        <div class="offer-body">
+            <div class="offer-detail">
+                <div style="display: flex; flex-direction: row;">
+                    <img src="../../assets/internet.png" style="height: 15px; width: 15px; margin: 6px;">
+                    <div  style="display: flex; align-items: flex-start; flex-direction: column;">
+                        <span class="detail-label">{{selectedCountry.internet}} GB</span>
+                        <p>Internet traffic</p>
+                    </div>
+                </div>
+                <span class="detail-price">${{selectedCountry.price}}</span>
+            </div>
+            <div  class="offer-duration">
+                <div style="display: flex; flex-direction: row;">
+                    <img src="../../assets/internet.png" style="height: 15px; width: 15px; margin: 6px;">
+                <div style="display: flex; align-items: flex-start; flex-direction: column;">
+                    <span class="detail-label">{{selectedCountry.duration}} Days</span>
+                    <p>Duration</p>
+                </div>
+            </div>
+
+                <button class="view-offer-btn">View Offer</button>
+            </div>
+        </div>
+        <div class="offer-footer">
+            <button class="get-offer-btn">Get for ${{selectedCountry.price}} <span class="cart-icon">🛒</span></button>
         </div>
     </div>
 
 
-
-    <button class="load-more-button" (click)="toggleSize()"> {{ isDefaultSize ? 'Show All Countries' : 'Hide All Countries' }}</button>
+    <button class="load-more-button" (click)="toggleSize()"> {{ isDefaultSize ? 'Show All Countries' : 'Hide  AllCountries' }}</button>
 </div>

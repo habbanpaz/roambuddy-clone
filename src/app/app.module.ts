@@ -14,6 +14,10 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app.routing.module';
 import { TestimonialsPageComponent } from './testimonials-page/testimonials-page.component';
 import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CountryEsimComponent } from './country-esim/country-esim.component';
+import { RegionalEsimComponent } from './regional-esim/regional-esim.component';
+import { GlobalEsimComponent } from './global-esim/global-esim.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +31,17 @@ import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.compon
     ActivateSimComponent,
     ContactComponent,
     TestimonialsPageComponent,
-    OrderEsimPageComponent
+    OrderEsimPageComponent,
+    CountryEsimComponent,
+    RegionalEsimComponent,
+    GlobalEsimComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
