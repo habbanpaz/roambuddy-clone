@@ -13,7 +13,11 @@ export class OrderEsimComponent implements OnInit {
   countries: any[] = [];
   selectedCountry: any = null;
   isModalVisible = false;
-  
+  selectedTab: number = 1;
+
+  selectTab(tabNumber: number) {
+    this.selectedTab = tabNumber;
+  }
 
   constructor(private countryService: CountryService, private router: Router, private renderer: Renderer2 ) { }
 

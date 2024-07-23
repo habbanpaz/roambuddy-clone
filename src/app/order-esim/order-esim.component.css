@@ -1,208 +1,227 @@
+.load-more-button {
+  background-color: #808080;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #fff;
+  border-width: 0;
+  height: 40px;
+  font-size: large;
+  border-radius: 5px;
 
-  
-  
-  .load-more-button {
-    width: 30%;
-    background-color: #808080;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: #fff;
-    border-width: 0;
-    height: 40px;
-    font-size: large;
-    border-radius: 5px;
-  
-  }
-  
-  .resizable-div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    background-color: #e5e5e5;
-    transition: height 0.3s ease;
-    margin: auto;
-    border-radius: 25px;
-    margin-bottom: 50px;
-    overflow: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-  }
-  
-    .search-container {
-    width: 100%;
-    margin: auto;
-    height: 40px;
-    /* Adjust the height as needed */
-    background-color: #ebebeb;
-    border-radius: 5px;
-    border-width: 0;
-    padding-left: 15px;
-  }
-  
-  .order-button {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 8px;
-    border-radius: 30px;
-  }
+}
 
-  .btn-types{
-    border-radius: 30px;
-  }
+.resizable-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  background-color: #e5e5e5;
+  transition: height 0.3s ease;
+  margin: auto;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  overflow: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  .btn-regional{
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-  .btn-country{
-    background-color: black;
-    color: white;
-  }
-  
-  .btn-types:hover{
-    background-color: black;
-    color: white;
-  }
-  
-  .tab {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .country-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .country {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 270px;
-    border-radius: 10px;
-    padding: 10px 15px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
-  
+}
 
-    
-  .country img {
-    width: 40px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .country-details {
-    margin-top: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-  }
+.search-container {
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  /* Adjust the height as needed */
+  background-color: #ebebeb;
+  border-radius: 5px;
+  border-width: 0;
+  padding-left: 15px;
+}
+
+.order-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.btn-types {
+  border-radius: 30px;
+}
 
 
-  .offer-card {
-    width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    margin: 20px auto;
-    text-align: center;
-    
+.btn-types:hover {
+  background-color: black;
+  color: white;
+}
+
+.tab {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+
+.country img {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.country-details {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+.offer-card {
+  width: 375px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 20px auto;
+  text-align: center;
+
 }
 
 .offer-header {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .offer-title {
-    font-weight: bold;
-    display: block;
+  font-weight: bold;
+  display: block;
 }
 
 .offer-countries {
   border: 1px solid #2A8891;
   background-color: #fff;
-    color: #2A8891;
-    padding: 5px;
+  color: #2A8891;
+  padding: 5px;
 
 }
 
 .offer-body {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.offer-detail, .offer-duration {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+.offer-detail,
+.offer-duration {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .detail-label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .detail-price {
-    color: #59d25d;
-    font-weight: bold;
+  color: #59d25d;
+  font-weight: bold;
 }
 
 .view-offer-btn {
   height: 30px;
-    background-color: #01DB5D;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #01DB5D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
 .offer-footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .get-offer-btn {
   width: 100%;
-    background-color: #fff;
-    color: #2A8891;
-    border-width: 1px;
-    border-color: #2A8891;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: large;
+  background-color: #fff;
+  color: #2A8891;
+  border-width: 1px;
+  border-color: #2A8891;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
 }
 
 .cart-icon {
-    margin-left: 10px;
-    color: #2A8891;
+  margin-left: 10px;
+  color: #2A8891;
 
 }
 
 .get-offer-btn:hover {
-    background-color: #2A8891;
-    color: #fff;
+  background-color: #2A8891;
+  color: #fff;
+}
+
+.regional-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+  height: 150px;
+  padding-left: 20px;
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.61)
+
+
+
 }

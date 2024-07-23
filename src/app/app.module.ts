@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CountryEsimComponent } from './country-esim/country-esim.component';
 import { RegionalEsimComponent } from './regional-esim/regional-esim.component';
 import { GlobalEsimComponent } from './global-esim/global-esim.component';
+import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { GlobalEsimComponent } from './global-esim/global-esim.component';
     CountryEsimComponent,
     RegionalEsimComponent,
     GlobalEsimComponent,
+    TestingComponent,
   ],
   imports: [
     BrowserModule,
