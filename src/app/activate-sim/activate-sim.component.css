@@ -1,51 +1,75 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .back-link {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    color: black;
-    text-decoration-line: none;
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .activation-section {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input {
-    width: 200px;
-    padding: 5px;
-  }
-  
-  .next-button {
-    color: white;
-    border-radius: 5px;
-    padding: 5px 70px;
-    border-width: none;
-    border-color: #01d54d;
-  }
-  
+  border: 1px #d2d2d2 solid;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.top-container {
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 15px;
+  border: 1px #d2d2d2 solid;
+
+}
+
+.back-link {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-left: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.activation-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 200px;
+  padding: 5px;
+}
+
+.next-button {
+  border-radius: 15px;
+  border: 2px white solid;
+  padding: 12px 160px;
+}
+
+.next-button:hover {
+  border: 2px #01db5d solid;
+  background-color: #fff;
+  color: #01db5d;
+}
+
+.mid-button {
+  display: flex;
+  justify-content: center;
+}
+
+#iccid{
+  width: 100%;
+}

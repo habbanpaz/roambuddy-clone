@@ -14,7 +14,11 @@ export class MainComponent implements OnInit {
   countries: any[] = [];
   selectedCountry: any = null;
   testimonials: any[] = [];
+  isModalVisible = false;
 
+  openModal() {
+    this.isModalVisible = true;
+  }
 
   constructor(private countryService: CountryService, private testimonialService: TestimonialService ) { }
 

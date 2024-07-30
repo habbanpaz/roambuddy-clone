@@ -1,0 +1,47 @@
+<!-- modal.component.html -->
+<div class="modal-overlay" *ngIf="isVisible" (click)="close()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <a class="close-button" (click)="close()">X</a>
+
+    <div class="parent">
+      <div class="top">
+        <button class="btn top-buttons" (click)="showSection('check')">Check if your mobile is eSim enabled</button>
+        <button class="btn top-buttons" (click)="showSection('list')">List of eSim Enabled devices</button>
+      </div>
+      <div class="right-text">
+        <p style="width:60%; float: right; text-align: end;">Check if your Android or Apple device is eSIM compatible
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div *ngIf="activeSection === 'check'">
+      <div class="dropdown-container">
+        <label class="label" for="os-device-type">Select OS / Device type</label>
+        <select id="os-device-type" [(ngModel)]="selectedDeviceType" (change)="onDeviceTypeChange()">
+          <option *ngFor="let deviceType of deviceTypes" [value]="deviceType">
+            {{ deviceType }}
+          </option>
+        </select>
+      </div>
+
+      <div class="image-container">
+        <img [src]="selectedImageUrl" [ngStyle]="{'height': selectedImageHeight}" alt="Device Compatibility Image">
+      </div>
+    </div>
+
+    <div *ngIf="activeSection === 'list'">
+      <div class="device-list">
+        <h3>IOS</h3>
+        <div *ngFor="let phone of iosPhones" class="phones-list">
+          <p>{{ phone }}</p>
+        </div>
+        <h3>ANDROID</h3>
+        <div *ngFor="let phone of androidPhones" class="phones-list">
+          <p>{{ phone }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

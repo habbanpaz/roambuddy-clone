@@ -1,10 +1,12 @@
 <div class="background-div">
-  <h1>Avoid Roaming Bill Shock and Save Over 75% with Roambuddy! </h1>
+  <h1 class="main-title">Avoid Roaming Bill Shock and Save Over 75% with Roambuddy! </h1>
   <button class="btn green-btn order-button">Order an eSIM</button>
-  <h3>Data coverage when you want, where you want.</h3>
+  <p class="data-coverage-text">Data coverage when you want, where you want.</p>
 </div>
 
-<app-order-esim></app-order-esim>
+<app-order-esim (openModalEvent)="openModal()"></app-order-esim>
+<app-esim-enabled-devices [isVisible]="isModalVisible" (closeModal)="isModalVisible = false"></app-esim-enabled-devices>
 
 <app-testimonials></app-testimonials>
+
 

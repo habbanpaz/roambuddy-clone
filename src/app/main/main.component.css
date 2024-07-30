@@ -1,20 +1,29 @@
 .background-div {
   width: 90%;
   height: 800px;
-  /* Adjust the height as needed */
   background-image: url("../../assets/roambuddy_hero.jpg");
   background-size: cover;
-  /* Cover the entire div */
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Prevent repeating the image */
   color: white;
-  /* Text color to contrast with the background */
-  padding-left: 50px;
-  padding-top: 100px;
-  padding-right: 40%;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-bottom: 10%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.main-title {
+  font-size: 44px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  line-height: 62px;
+  width: 45%;
+  padding: 1rem 0rem;
 
 }
 
@@ -58,8 +67,14 @@
 }
 
 .order-button {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 250px;
+  height: 55px;
+  font-size: 18px;
+}
+
+.data-coverage-text{
+  font-size: 28px;
+  max-width: 300px;
 }
 
 .tabs {
@@ -92,7 +107,8 @@
   border: 1px solid #ccc;
   cursor: pointer;
   text-align: left;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 
 .country img {
   width: 40px;

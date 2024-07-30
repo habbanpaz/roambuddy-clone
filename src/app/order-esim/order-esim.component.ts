@@ -1,6 +1,7 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2, Output, EventEmitter } from '@angular/core';
 import { CountryService } from '../services/country.service';
 import { Router } from '@angular/router';
+import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devices-service.service';
 
 @Component({
   selector: 'app-order-esim',
@@ -12,25 +13,31 @@ export class OrderEsimComponent implements OnInit {
   currentHeight = 400;
   countries: any[] = [];
   selectedCountry: any = null;
-  isModalVisible = false;
   selectedTab: number = 1;
+  @Output() openModalEvent = new EventEmitter<void>();
 
+  // openModal() {
+  //   this.openModalEvent.emit();
+  // }
+
+  openModal(event: Event) {
+    this.esimEnabledService.setModalState(true);
+
+    event.preventDefault(); // Prevent the default anchor tag behavior
+    this.openModalEvent.emit(); // Emit event to parent component
+  }
+ 
   selectTab(tabNumber: number) {
     this.selectedTab = tabNumber;
   }
 
-  constructor(private countryService: CountryService, private router: Router, private renderer: Renderer2 ) { }
+  constructor(private countryService: CountryService, private router: Router, private renderer: Renderer2, private esimEnabledService: EsimEnabledDevicesServiceService ) { }
 
   ngOnInit(): void {
     this.loadCountries();
 
   }
 
-  
-
-  openModal() {
-    this.isModalVisible = true;
-  }
 
   toggleSize() {
     if (this.isDefaultSize) {

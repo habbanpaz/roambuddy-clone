@@ -1,0 +1,29 @@
+.parent{
+    justify-content: center; 
+    flex-direction: column; 
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.top{
+    margin: 5%;
+}
+.panel {
+    border-top: 1px solid #ccc;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.panel-header {
+    border-bottom: 1px solid #ccc;
+    padding: 30px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.panel-content {
+    padding: 20px 20px;
+    background-color: #fff;
+}

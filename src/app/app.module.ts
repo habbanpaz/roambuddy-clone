@@ -14,11 +14,15 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app.routing.module';
 import { TestimonialsPageComponent } from './testimonials-page/testimonials-page.component';
 import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CountryEsimComponent } from './country-esim/country-esim.component';
 import { RegionalEsimComponent } from './regional-esim/regional-esim.component';
 import { GlobalEsimComponent } from './global-esim/global-esim.component';
-import { TestingComponent } from './testing/testing.component';
+import { EsimEnabledDevicesComponent } from './esim-enabled-devices/esim-enabled-devices.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -36,14 +40,19 @@ import { TestingComponent } from './testing/testing.component';
     CountryEsimComponent,
     RegionalEsimComponent,
     GlobalEsimComponent,
-    TestingComponent,
+    EsimEnabledDevicesComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([]),
     NgbModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

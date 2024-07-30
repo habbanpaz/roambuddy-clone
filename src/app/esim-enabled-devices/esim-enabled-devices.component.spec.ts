@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestingComponent } from './testing.component';
+import { EsimEnabledDevicesComponent } from './esim-enabled-devices.component';
 
-describe('TestingComponent', () => {
-  let component: TestingComponent;
-  let fixture: ComponentFixture<TestingComponent>;
+describe('EsimEnabledDevicesComponent', () => {
+  let component: EsimEnabledDevicesComponent;
+  let fixture: ComponentFixture<EsimEnabledDevicesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TestingComponent ]
+      declarations: [ EsimEnabledDevicesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestingComponent);
+    fixture = TestBed.createComponent(EsimEnabledDevicesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
