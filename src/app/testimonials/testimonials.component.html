@@ -1,18 +1,18 @@
 <div class="testimonials">
-    <h1 style="text-align: center;margin-top: 50px; margin-bottom: 40px;">What Our Customers Says About Us</h1>
-    <div class="testimonials-background">
-      <div *ngFor="let testimonial of testimonials" class="testimonial-card">
-        <div class="testimonial-header">
-          <img [src]="testimonial.image" alt="Profile Picture" class="profile-pic">
-        </div>
-        <div class="testimonial-content">
-          <p>
-            {{ testimonial.text }}
-          </p>
-          <p class="testimonial-author">
-            {{ testimonial.name }}
-          </p>
-        </div>
+  <h1 style="text-align: center; margin-bottom: 40px;">What Our Customers Says About Us</h1>
+  <div class="testimonials-background">
+    <div *ngFor="let testimonial of testimonials" class="testimonial-card">
+      <div class="testimonial-header">
+        <img [src]="testimonial.image" alt="Profile Picture" class="profile-pic">
+      </div>
+      <div class="testimonial-content">
+        <p>
+          {{ testimonial.text }}
+        </p>
+        <p class="testimonial-author">
+          {{ testimonial.name }}
+        </p>
       </div>
     </div>
   </div>
+</div>

@@ -3,11 +3,13 @@
     flex-direction: column; 
     display: flex;
     margin-bottom: 50px;
+    padding-top: 50px;
 }
 
 .top{
     margin: 5%;
 }
+
 .panel {
     border-top: 1px solid #ccc;
     margin-left: 150px;

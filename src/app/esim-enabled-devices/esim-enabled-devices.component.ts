@@ -15,6 +15,8 @@ export class EsimEnabledDevicesComponent implements OnInit {
   selectedImageUrl!: string;
   selectedImageHeight!: string;
   activeSection: string = 'check';  // Default section
+
+
   iosPhones: string[] = [
     'Apple iPhone 15 A2846', 
     'Apple iPhone 15 Plus A2847', 

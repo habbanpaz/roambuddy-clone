@@ -1,20 +1,16 @@
-body, html {
-  margin: 0;
-  padding: 0;
-}
+
 
 .container {
   border: 1px #d2d2d2 solid;
   margin-bottom: 50px;
   padding-bottom: 30px;
+  padding-top: 90px;
 }
 
 .top-container {
   background-color: #f7f7f7;
-  margin: 0;
   padding: 15px;
   border: 1px #d2d2d2 solid;
-
 }
 
 .back-link {

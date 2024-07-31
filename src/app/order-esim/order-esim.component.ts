@@ -15,17 +15,17 @@ export class OrderEsimComponent implements OnInit {
   selectedCountry: any = null;
   selectedTab: number = 1;
   @Output() openModalEvent = new EventEmitter<void>();
-
+  
   // openModal() {
-  //   this.openModalEvent.emit();
-  // }
-
-  openModal(event: Event) {
-    this.esimEnabledService.setModalState(true);
-
-    event.preventDefault(); // Prevent the default anchor tag behavior
-    this.openModalEvent.emit(); // Emit event to parent component
-  }
+    //   this.openModalEvent.emit();
+    // }
+    
+    openModal(event: Event) {
+      this.esimEnabledService.setModalState(true);
+      
+      event.preventDefault(); // Prevent the default anchor tag behavior
+      this.openModalEvent.emit(); // Emit event to parent component
+    }
  
   selectTab(tabNumber: number) {
     this.selectedTab = tabNumber;

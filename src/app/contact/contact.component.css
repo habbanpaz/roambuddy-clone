@@ -1,27 +1,25 @@
 .background-div {
   background-image: url("../../assets/contact_us_bg.png");
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
   margin-left: 5%;
   margin-right: 5%;
-
-  
-
+  height: 254px;
+  border-radius: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 440px;
 }
 
 .form-container {
   max-width: 60%;
   margin: auto;
-  margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.top-row-one {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-group {
@@ -33,14 +31,21 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+
+.half-width{
+  width: 48%;
+}
+
+input,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #999;
 }
 
@@ -53,14 +58,19 @@ textarea {
 }
 
 .submit-button {
-  background-color: #28a745;
+  background-color: #01db5d;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
 .submit-button:hover {
   background-color: #218838;
+}
+
+.submit-div{
+  display: flex;
+  justify-content: center;
 }
