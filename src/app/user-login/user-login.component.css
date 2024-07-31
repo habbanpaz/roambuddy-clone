@@ -1,0 +1,58 @@
+.user-auth{
+  padding-top: 180px;
+padding-bottom: 200px;
+padding-left: 35%;
+padding-right: 35%;
+}
+
+.login{
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+
+.signup{
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+
+
+.auth-toggle-link{
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.common-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #ebebeb;
+    color: black;
+}
+
+.form-button{
+  background-color: #01db5d;
+  color: white;
+  line-height: 18.9px;
+  width: 120px;
+  height: 43px;
+  border-radius: 5px;
+  border-color: none;
+  border: none;
+  transition: 0.3s ease;
+}
+

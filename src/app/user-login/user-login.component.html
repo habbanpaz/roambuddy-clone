@@ -1,0 +1,47 @@
+<div class="user-auth">
+    <div *ngIf="!showLogin" class="card signup">
+        <h1 class="fs-4 card-title fw-bold mb-4">Sign Up</h1>
+        <form 
+        #userSignUp="ngForm" 
+        (ngSubmit)="signUp(userSignUp.value)" 
+         class="common-form">
+            
+            <label for="username">User Name</label>
+            <input class="form-input" type="text" ngModel name="username" placeholder="User name">
+            
+            <label for="email">Email Address</label>
+            <input class="form-input" type="text" ngModel name="email" placeholder="Email">
+            
+            <label for="password">Password</label>
+            <input class="form-input" type="password" ngModel name="password" placeholder="Password">
+
+            <a class="auth-toggle-link" (click)="openLogin()"> Already have an account? Sign in</a>
+
+            <button class=" form-button ms-auto">Sign up</button>
+            
+
+        </form>
+    </div>
+    <div *ngIf="showLogin" class="card login">
+        <h1 class="fs-4 card-title fw-bold mb-4">Login</h1>
+        <form     
+        #userLogin="ngForm" 
+        (ngSubmit)="login(userLogin.value)" 
+        class="common-form">
+            
+            <label for="email">Email Address</label>
+            <input class="form-input" type="text" ngModel name="email" placeholder="Email">
+            
+            <label for="password">Password</label>
+            <input class="form-input" type="password" ngModel name="password" placeholder="Password">
+
+            <a class="auth-toggle-link" (click)="openSignup()"> Create account</a>
+
+            <button class=" form-button ms-auto">Login</button>
+            
+
+        </form>
+    </div>
+</div>
+
+
