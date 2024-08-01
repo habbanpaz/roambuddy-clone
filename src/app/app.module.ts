@@ -24,6 +24,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UserHomeComponent } from './user-home/user-home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { UserLoginComponent } from './user-login/user-login.component';
     RegionalEsimComponent,
     GlobalEsimComponent,
     EsimEnabledDevicesComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserHomeComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

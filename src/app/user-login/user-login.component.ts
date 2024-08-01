@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Login, SignUp } from '../data-type';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-user-login',
@@ -6,16 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent implements OnInit {
-  
-  showLogin = false
 
-  constructor(    ) { }
+  showLogin = false
+  authError: string = ''
+
+  constructor(private user: UserService, private route : Router) { }
 
 
   ngOnInit(): void {
-   }
+    //  this.user.reloadUser()
+  }
 
-   openLogin() {
+  openLogin() {
     this.showLogin = true
   }
 
@@ -23,15 +28,16 @@ export class UserLoginComponent implements OnInit {
     this.showLogin = false
   }
 
-  signUp(data: string): void {
-    console.log(data);
-    
-    
+  signUp(data: SignUp): void {
+    this.user.userSignup(data).subscribe((result) => {
+      if (result) {
+        this.route.navigate(['user-home'])
+      }
+    })
   }
 
-  login(data: string): void {
+  login(data: Login): void {
     console.log(data);
-
   }
 
 }

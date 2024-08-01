@@ -10,6 +10,7 @@ import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.compon
 import { GlobalEsimComponent } from './global-esim/global-esim.component';
 import { RegionalEsimComponent } from './regional-esim/regional-esim.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UserHomeComponent } from './user-home/user-home.component';
 
 const routes: Routes = [
 {
@@ -48,6 +49,10 @@ const routes: Routes = [
 {
   path: 'user-login',
   component: UserLoginComponent
+},
+{
+  path: 'user-home',
+  component: UserHomeComponent
 }
 
 ]
