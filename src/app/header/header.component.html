@@ -1,19 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-light" [ngClass]="{ 'navbar-div': !isModalOpen, 'navbar-div-relative': isModalOpen }">
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  [ngClass]="{ 'navbar-div': !isModalOpen, 'navbar-div-relative': isModalOpen }"
+>
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="">
-      <img src="assets/logo.png" alt="Roambuddy Logo" class="logo-roambuddy">
+      <img src="assets/logo.png" alt="Roambuddy Logo" class="logo-roambuddy" />
     </a>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarNav" [ngSwitch]="menuType">
+      <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="btn btn-dark routing-btn-one" routerLink="order-esim-page">Order an eSIM</a>
+          <a class="btn btn-dark routing-btn-one" routerLink="order-esim-page"
+            >Order an eSIM</a
+          >
         </li>
         <li class="nav-item">
-          <a class="btn btn-light routing-btn" routerLink="activate-sim">Activate SIM/Device</a>
+          <a class="btn btn-light routing-btn" routerLink="activate-sim"
+            >Activate SIM/Device</a
+          >
         </li>
         <li class="nav-item">
-          <a class="btn btn-light routing-btn" routerLink="testimonials-page">Testimonial</a>
+          <a class="btn btn-light routing-btn" routerLink="testimonials-page"
+            >Testimonial</a
+          >
         </li>
         <li class="nav-item">
           <a class="btn btn-light routing-btn" routerLink="faqs">FAQ</a>
@@ -24,8 +33,41 @@
         <li class="nav-item">
           <a class="btn cart">🛒</a>
         </li>
-        <li class="nav-item" style="list-style: none;">
+        <li class="nav-item" style="list-style: none">
           <a class="btn green-btn login-btn" routerLink="user-login">Login</a>
+        </li>
+      </ul>
+      <ul *ngSwitchCase="'user'" class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="btn btn-dark routing-btn-one" routerLink="order-esim-page"
+            >Order an eSIM</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light routing-btn" routerLink="activate-sim"
+            >Activate SIM/Device</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light routing-btn" routerLink="testimonials-page"
+            >Testimonial</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light routing-btn" routerLink="faqs">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-light routing-btn" (click)="logoutFunction()"
+            >Logout</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="btn cart">🛒</a>
+        </li>
+        <li class="nav-item" style="list-style: none">
+          <a class="btn green-btn login-btn" routerLink="user-home">{{
+            userName
+          }}</a>
         </li>
       </ul>
     </div>

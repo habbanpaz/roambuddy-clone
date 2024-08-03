@@ -6,38 +6,31 @@ import { UserService } from '../services/user.service';
 @Component({
   selector: 'app-user-login',
   templateUrl: './user-login.component.html',
-  styleUrls: ['./user-login.component.css']
+  styleUrls: ['./user-login.component.css'],
 })
 export class UserLoginComponent implements OnInit {
+  showLogin = false;
+  authError: string = '';
 
-  showLogin = false
-  authError: string = ''
-
-  constructor(private user: UserService, private route : Router) { }
-
+  constructor(private user: UserService, private route: Router) {}
 
   ngOnInit(): void {
-    //  this.user.reloadUser()
+    this.user.reloadUser();
   }
 
   openLogin() {
-    this.showLogin = true
+    this.showLogin = true;
   }
 
   openSignup() {
-    this.showLogin = false
+    this.showLogin = false;
   }
 
   signUp(data: SignUp): void {
-    this.user.userSignup(data).subscribe((result) => {
-      if (result) {
-        this.route.navigate(['user-home'])
-      }
-    })
+    this.user.userSignup(data);
   }
 
   login(data: Login): void {
-    console.log(data);
+    this.user.userLogin(data);
   }
-
 }

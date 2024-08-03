@@ -1,4 +1,10 @@
-import { Component, OnInit, Renderer2, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Renderer2,
+  Output,
+  EventEmitter,
+} from '@angular/core';
 import { CountryService } from '../services/country.service';
 import { Router } from '@angular/router';
 import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devices-service.service';
@@ -6,7 +12,7 @@ import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devic
 @Component({
   selector: 'app-order-esim',
   templateUrl: './order-esim.component.html',
-  styleUrls: ['./order-esim.component.css']
+  styleUrls: ['./order-esim.component.css'],
 })
 export class OrderEsimComponent implements OnInit {
   isDefaultSize = true;
@@ -15,29 +21,28 @@ export class OrderEsimComponent implements OnInit {
   selectedCountry: any = null;
   selectedTab: number = 1;
   @Output() openModalEvent = new EventEmitter<void>();
-  
-  // openModal() {
-    //   this.openModalEvent.emit();
-    // }
-    
-    openModal(event: Event) {
-      this.esimEnabledService.setModalState(true);
-      
-      event.preventDefault(); // Prevent the default anchor tag behavior
-      this.openModalEvent.emit(); // Emit event to parent component
-    }
- 
+
+  openModal(event: Event) {
+    this.esimEnabledService.setModalState(true);
+
+    event.preventDefault(); // Prevent the default anchor tag behavior
+    this.openModalEvent.emit(); // Emit event to parent component
+  }
+
   selectTab(tabNumber: number) {
     this.selectedTab = tabNumber;
   }
 
-  constructor(private countryService: CountryService, private router: Router, private renderer: Renderer2, private esimEnabledService: EsimEnabledDevicesServiceService ) { }
+  constructor(
+    private countryService: CountryService,
+    private router: Router,
+    private renderer: Renderer2,
+    private esimEnabledService: EsimEnabledDevicesServiceService
+  ) {}
 
   ngOnInit(): void {
     this.loadCountries();
-
   }
-
 
   toggleSize() {
     if (this.isDefaultSize) {
@@ -67,8 +72,4 @@ export class OrderEsimComponent implements OnInit {
   selectCountry(country: any) {
     this.selectedCountry = country;
   }
-
-
-
-
 }
