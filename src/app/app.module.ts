@@ -26,6 +26,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LogoutModalComponent } from './logout-modal/logout-modal.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { HttpClientModule } from '@angular/common/http';
     GlobalEsimComponent,
     EsimEnabledDevicesComponent,
     UserLoginComponent,
-    UserHomeComponent
+    UserHomeComponent,
+    LogoutModalComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

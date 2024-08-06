@@ -18,7 +18,8 @@ export class UserService {
       .subscribe((result) => {
         if (result) {
           localStorage.setItem('user', JSON.stringify(result.body));
-          this.router.navigate(['user-home']);
+          this.isUserLoggedIn.next(true); 
+          this.router.navigate(['/']);
         }
       });
   }
@@ -26,7 +27,7 @@ export class UserService {
   reloadUser() {
     if (localStorage.getItem('user')) {
       this.isUserLoggedIn.next(true);
-      this.router.navigate(['user-home']);
+      // this.router.navigate(['user-home']);
     }
   }
 
@@ -43,10 +44,17 @@ export class UserService {
         if (result && result.body && result.body.length) {
           console.warn('user logged in');
           localStorage.setItem('user', JSON.stringify(result.body));
-          this.router.navigate(['user-home']);
+          this.isUserLoggedIn.next(true); 
+          this.router.navigate(['/']);
         } else {
           console.warn('login failed');
         }
       });
+  }
+
+  logout() {
+    localStorage.removeItem('user');
+    this.isUserLoggedIn.next(false);
+    this.router.navigate(['/']);
   }
 }

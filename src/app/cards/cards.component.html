@@ -1,0 +1,13 @@
+<div class="countries-container">
+  <div *ngFor="let country of countries; let i = index" class="country-item">
+    <button (click)="toggleCard(i)" class="country">
+      <div>
+        <img [src]="country.flag" alt="{{ country.name }} flag" class="flag">
+        <span>{{ country.name }}</span>
+      </div>
+    </button>
+    <div *ngIf="activeIndex === i" class="card">
+      <p>Details about {{ country.name }}</p>
+    </div>
+  </div>
+</div>
