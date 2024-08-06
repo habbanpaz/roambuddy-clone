@@ -5,8 +5,6 @@ import {
   Output,
   EventEmitter,
 } from '@angular/core';
-import { CountryService } from '../services/country.service';
-import { Router } from '@angular/router';
 import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devices-service.service';
 
 @Component({
@@ -15,10 +13,7 @@ import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devic
   styleUrls: ['./order-esim.component.css'],
 })
 export class OrderEsimComponent implements OnInit {
-  isDefaultSize = true;
-  currentHeight = 400;
-  countries: any[] = [];
-  selectedCountry: any = null;
+
   selectedTab: number = 1;
   @Output() openModalEvent = new EventEmitter<void>();
 
@@ -34,42 +29,12 @@ export class OrderEsimComponent implements OnInit {
   }
 
   constructor(
-    private countryService: CountryService,
-    private router: Router,
-    private renderer: Renderer2,
+
     private esimEnabledService: EsimEnabledDevicesServiceService
   ) {}
 
   ngOnInit(): void {
-    this.loadCountries();
   }
 
-  toggleSize() {
-    if (this.isDefaultSize) {
-      // Increase size to 4000px
-      this.currentHeight = 4000;
-      // Load additional countries
-      this.loadAdditionalCountries();
-    } else {
-      // Decrease size back to 400px
-      this.currentHeight = 400;
-      // Clear additional countries if needed
-      this.countries = this.countryService.getCountries();
-    }
-    // Toggle the state of isDefaultSize
-    this.isDefaultSize = !this.isDefaultSize;
-  }
-
-  loadCountries() {
-    this.countries = this.countryService.getCountries();
-  }
-
-  loadAdditionalCountries() {
-    const additionalCountries = this.countryService.getAdditionalCountries();
-    this.countries = [...this.countries, ...additionalCountries];
-  }
-
-  selectCountry(country: any) {
-    this.selectedCountry = country;
-  }
+  
 }

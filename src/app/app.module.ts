@@ -28,6 +28,7 @@ import { UserHomeComponent } from './user-home/user-home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LogoutModalComponent } from './logout-modal/logout-modal.component';
 import { CardsComponent } from './cards/cards.component';
+import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-modal.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { CardsComponent } from './cards/cards.component';
     UserLoginComponent,
     UserHomeComponent,
     LogoutModalComponent,
-    CardsComponent
+    CardsComponent,
+    HaveYouUsedModalComponent
   ],
   imports: [
     BrowserModule,

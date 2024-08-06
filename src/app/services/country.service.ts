@@ -10,8 +10,8 @@ export class CountryService {
   getCountries() {
     return [
       {
-        name: "Afghanistan",
-        flag: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+        name: "Pakistan",
+        flag: "https://www.mrflag.com/wp-content/uploads/2018/11/Pakistan.png",
         duration: "10",
         internet: "30",
         price: "50"
