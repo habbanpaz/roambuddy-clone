@@ -1,0 +1,171 @@
+/* Modal Container */
+.left-side{
+    width: 1100px;
+
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Progress Steps */
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #999;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+}
+
+.step.active {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+}
+
+.step::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+.step.active::after {
+    background-color: #4caf50;
+}
+
+/* Modal Body */
+.modal-body {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-btn,
+.next-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.next-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Order Review */
+.order-review {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.order-review h4 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-details span {
+    font-size: 16px;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.coupon-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.coupon-code label {
+    font-size: 16px;
+}
+
+.coupon-code input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.phone-select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.device-select {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}

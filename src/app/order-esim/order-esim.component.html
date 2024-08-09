@@ -10,10 +10,13 @@
   </form>
   <br />
   <p style="text-align: center">for unlocked</p>
+
   <p style="text-align: center; font-weight: bold; color: #59d25d">
     <a (click)="openModal($event)">eSIM-enabled devices</a>
   </p>
 </div>
+
+
 
 <div class="resizable-div">
   <div class="mainTab">
@@ -41,206 +44,7 @@
   </div>
 
   <div *ngIf="selectedTab === 1" class="country-list">
-    <!-- <button
-      class="country"
-      *ngFor="let country of countries"
-      (click)="selectCountry(country)"
-    >
-      <div>
-        <img [src]="country.flag" alt="{{ country.name }} flag" />
-        <span>{{ country.name }}</span>
-      </div>
-      <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px" />
-    </button> -->
-
     <app-cards></app-cards>
-
-    <!-- New Div for Country Details
-    <div style="display: flex; flex-wrap: wrap; gap: 20px">
-      <div *ngIf="selectedCountry" class="offer-card">
-        <div class="offer-header">
-          <div class="offer-title">
-            {{ selectedCountry.name }} {{ selectedCountry.duration }}D
-          </div>
-          <div class="offer-countries">works in 106 countries</div>
-        </div>
-        <hr />
-        <div class="offer-body">
-          <div class="offer-detail">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="../../assets/internet.png"
-                style="height: 15px; width: 15px; margin: 6px"
-              />
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-start;
-                  flex-direction: column;
-                "
-              >
-                <span class="detail-label"
-                  >{{ selectedCountry.internet }} GB</span
-                >
-                <p>Internet traffic</p>
-              </div>
-            </div>
-            <span class="detail-price">${{ selectedCountry.price }}</span>
-          </div>
-          <div class="offer-duration">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="../../assets/internet.png"
-                style="height: 15px; width: 15px; margin: 6px"
-              />
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-start;
-                  flex-direction: column;
-                "
-              >
-                <span class="detail-label"
-                  >{{ selectedCountry.duration }} Days</span
-                >
-                <p>Duration</p>
-              </div>
-            </div>
-
-            <button class="view-offer-btn">View Offer</button>
-          </div>
-        </div>
-        <div class="offer-footer">
-          <button class="get-offer-btn">
-            Get for ${{ selectedCountry.price }}
-            <span class="cart-icon">🛒</span>
-          </button>
-        </div>
-      </div>
-      <div *ngIf="selectedCountry" class="offer-card">
-        <div class="offer-header">
-          <div class="offer-title">
-            {{ selectedCountry.name }} {{ selectedCountry.duration }}D
-          </div>
-          <div class="offer-countries">works in 106 countries</div>
-        </div>
-        <hr />
-        <div class="offer-body">
-          <div class="offer-detail">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="../../assets/internet.png"
-                style="height: 15px; width: 15px; margin: 6px"
-              />
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-start;
-                  flex-direction: column;
-                "
-              >
-                <span class="detail-label"
-                  >{{ selectedCountry.internet }} GB</span
-                >
-                <p>Internet traffic</p>
-              </div>
-            </div>
-            <span class="detail-price">${{ selectedCountry.price }}</span>
-          </div>
-          <div class="offer-duration">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="../../assets/internet.png"
-                style="height: 15px; width: 15px; margin: 6px"
-              />
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-start;
-                  flex-direction: column;
-                "
-              >
-                <span class="detail-label"
-                  >{{ selectedCountry.duration }} Days</span
-                >
-                <p>Duration</p>
-              </div>
-            </div>
-
-            <button class="view-offer-btn">View Offer</button>
-          </div>
-        </div>
-        <div class="offer-footer">
-          <button class="get-offer-btn">
-            Get for ${{ selectedCountry.price }}
-            <span class="cart-icon">🛒</span>
-          </button>
-        </div>
-      </div>
-      <div *ngIf="selectedCountry" class="offer-card">
-        <div class="offer-header">
-          <div class="offer-title">
-            {{ selectedCountry.name }} {{ selectedCountry.duration }}D
-          </div>
-          <div class="offer-countries">works in 106 countries</div>
-        </div>
-        <hr />
-        <div class="offer-body">
-          <div class="offer-detail">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="../../assets/internet.png"
-                style="height: 15px; width: 15px; margin: 6px"
-              />
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-start;
-                  flex-direction: column;
-                "
-              >
-                <span class="detail-label"
-                  >{{ selectedCountry.internet }} GB</span
-                >
-                <p>Internet traffic</p>
-              </div>
-            </div>
-            <span class="detail-price">${{ selectedCountry.price }}</span>
-          </div>
-          <div class="offer-duration">
-            <div style="display: flex; flex-direction: row">
-              <img
-                src="../../assets/internet.png"
-                style="height: 15px; width: 15px; margin: 6px"
-              />
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-start;
-                  flex-direction: column;
-                "
-              >
-                <span class="detail-label"
-                  >{{ selectedCountry.duration }} Days</span
-                >
-                <p>Duration</p>
-              </div>
-            </div>
-
-            <button class="view-offer-btn">View Offer</button>
-          </div>
-        </div>
-        <div class="offer-footer">
-          <button class="get-offer-btn">
-            Get for ${{ selectedCountry.price }}
-            <span class="cart-icon">🛒</span>
-          </button>
-        </div>
-      </div>
-      <div>
-      </div>
-    </div> -->
-
   </div>
 
   <div *ngIf="selectedTab === 2" class="regional-div">
@@ -281,3 +85,5 @@
   <div *ngIf="selectedTab === 3" class="content-div">
   </div>
 </div>
+
+

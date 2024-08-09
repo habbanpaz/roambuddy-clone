@@ -1,0 +1,99 @@
+<div class="modal-content">
+  <div class="left-side">
+    <div class="progress-steps">
+      <span>SELECT YOUR DEVICE</span>
+      <span>ENTER BASIC DETAILS</span>
+      <span>VERIFY EMAIL</span>
+      <span>PAYMENT METHOD</span>
+    </div>
+    
+    <!-- Device Selection Section -->
+    <div *ngIf="!showBillingAddress && !showOtpVerification" class="modal-body">
+      <h3>Let’s get you started</h3>
+      
+      <!-- First Dropdown for selecting device type -->
+      <select class="device-select" [(ngModel)]="selectedDeviceType" (ngModelChange)="onDeviceTypeChange()">
+        <option value="">Select mobile device</option>
+        <option value="android">Android</option>
+        <option value="ios">iPhone</option>
+      </select>
+
+      <!-- Second Dropdown for selecting specific phone model -->
+      <select *ngIf="showPhoneDropdown" class="phone-select" [(ngModel)]="selectedPhoneModel">
+        <option value="">Select phone model</option>
+        <option *ngFor="let phone of phoneModels" [value]="phone">{{ phone }}</option>
+      </select>
+
+      <div class="buttons">
+        <button class="back-btn">Back</button>
+        <button class="next-btn" (click)="showBilling()">Enter Basic Details</button>
+      </div>
+    </div>
+
+    <!-- Billing Address Section -->
+    <div *ngIf="showBillingAddress && !showOtpVerification" class="modal-body">
+      <h3>Billing Address</h3>
+      
+      <form>
+        <label for="firstName">First Name</label>
+        <input id="firstName" [(ngModel)]="billingAddress.firstName" name="firstName" required>
+
+        <label for="lastName">Last Name</label>
+        <input id="lastName" [(ngModel)]="billingAddress.lastName" name="lastName" required>
+
+        <label for="email">Email</label>
+        <input id="email" [(ngModel)]="billingAddress.email" name="email" type="email" required>
+
+        <p>*IMPORTANT: We will send the QR code to this email address</p>
+
+        <div>
+          <input type="checkbox" id="privacyPolicy" [(ngModel)]="billingAddress.privacyPolicy" name="privacyPolicy" required>
+          <label for="privacyPolicy">Acknowledge our <a href="#">Privacy Policy</a></label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="terms" [(ngModel)]="billingAddress.terms" name="terms" required>
+          <label for="terms">I agree with the <a href="#">Terms and conditions</a></label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="nonRefundable" [(ngModel)]="billingAddress.nonRefundable" name="nonRefundable" required>
+          <label for="nonRefundable">I accept that the data plans are not refundable once I purchase them.</label>
+        </div>
+      </form>
+
+      <div class="buttons">
+        <button class="back-btn" (click)="showBillingAddress = false">Back</button>
+        <button class="next-btn" (click)="showOtpVerificationForm()">Proceed to Payment</button>
+      </div>
+    </div>
+
+    <!-- OTP Verification Section -->
+    <div *ngIf="showOtpVerification" class="modal-body">
+      <h3>Enter OTP code to verify your email address</h3>
+      <input [(ngModel)]="otpCode" placeholder="Enter OTP code" class="otp-input">
+      <div class="buttons">
+        <button class="back-btn" (click)="showOtpVerification = false">Back</button>
+        <button class="next-btn" (click)="verifyOtp()">Verify</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="order-review">
+    <h4>Order Review</h4>
+    <div class="item">1 items in cart</div>
+    <div class="item-details">
+      <span>Europe Plus 1GB + E-SIM</span>
+      <span>$5</span>
+      <button class="delete-btn">🗑️</button>
+    </div>
+    <div class="coupon-code">
+      <label for="coupon">Coupon Code:</label>
+      <input type="text" id="coupon">
+    </div>
+    <div class="total">
+      <span>Grand Total</span>
+      <span>$5</span>
+    </div>
+  </div>
+</div>

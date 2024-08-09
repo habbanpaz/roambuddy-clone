@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LogoutModalComponent } from './logout-modal/logout-modal.component';
 import { CardsComponent } from './cards/cards.component';
 import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-modal.component';
+import { PaymentModalComponent } from './payment-modal/payment-modal.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-m
     UserHomeComponent,
     LogoutModalComponent,
     CardsComponent,
-    HaveYouUsedModalComponent
+    HaveYouUsedModalComponent,
+    PaymentModalComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,7 @@ import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-m
     MatFormFieldModule,
     MatSelectModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,10 +7,9 @@ import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
 import { TestimonialsPageComponent } from './testimonials-page/testimonials-page.component';
 import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.component';
-import { GlobalEsimComponent } from './global-esim/global-esim.component';
-import { RegionalEsimComponent } from './regional-esim/regional-esim.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserHomeComponent } from './user-home/user-home.component';
+import { PaymentModalComponent } from './payment-modal/payment-modal.component';
 
 const routes: Routes = [
 {
@@ -19,7 +18,8 @@ const routes: Routes = [
 },
 {
   path: 'order-esim-page',
-  component: OrderEsimPageComponent
+  component: OrderEsimPageComponent,
+
 },
 {
   path: 'activate-sim',
@@ -36,16 +36,9 @@ const routes: Routes = [
 {
   path: 'contact',
   component: ContactComponent
-},
-{
-  path: 'global-esim',
-  component: GlobalEsimComponent
-},
-{
-  path: 'regional-esim',
-  component: RegionalEsimComponent
 
 },
+
 {
   path: 'user-login',
   component: UserLoginComponent
@@ -53,6 +46,12 @@ const routes: Routes = [
 {
   path: 'user-home',
   component: UserHomeComponent
+},
+{
+  path: 'payment-modal',
+  component: PaymentModalComponent   ,
+   data: { showHeaderFooter: false } // Add this line to control visibility
+
 }
 
 ]
