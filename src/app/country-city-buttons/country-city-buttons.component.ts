@@ -18,6 +18,7 @@ export class CountryCityButtonsComponent implements OnInit {
   ngOnInit(): void {
     this.http.get('assets/json/countries.json').subscribe((data) => {
       this.countries = data;
+      console.log(this.countries.row1);
     });
   }
 

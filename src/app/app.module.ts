@@ -31,6 +31,7 @@ import { CardsComponent } from './cards/cards.component';
 import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-modal.component';
 import { PaymentModalComponent } from './payment-modal/payment-modal.component';
 import { CountryCityButtonsComponent } from './country-city-buttons/country-city-buttons.component';
+import { OfferCardComponent } from './offer-card/offer-card.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { CountryCityButtonsComponent } from './country-city-buttons/country-city
     HaveYouUsedModalComponent,
     PaymentModalComponent,
     CountryCityButtonsComponent,
+    OfferCardComponent,
   ],
   imports: [
     BrowserModule,
