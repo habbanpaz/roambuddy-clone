@@ -19,19 +19,53 @@
       "name": "Uzbekistan",
       "flag": "https://flagcdn.com/uz.svg",
       "color": "blue",
-      "boxes": 8
+      "boxes": 8,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     },
     {
       "name": "Albania",
       "flag": "https://flagcdn.com/al.svg",
       "color": "green",
-      "boxes": 6
+      "boxes": 6,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Algeria",
       "flag": "https://flagcdn.com/dz.svg",
       "color": "yellow",
-      "boxes": 7
+      "boxes": 7,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     }
   ],
   "row2": [
@@ -39,25 +73,77 @@
       "name": "Afghanistan",
       "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
       "color": "blue",
-      "boxes": 10
+      "boxes": 10,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     },
     {
       "name": "Al Islands",
       "flag": "https://flagcdn.com/ax.svg",
       "color": "green",
-      "boxes": 4
+      "boxes": 4,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     },
     {
       "name": "Samoa",
       "flag": "https://flagcdn.com/as.svg",
       "color": "red",
-      "boxes": 5
+      "boxes": 5,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Andorra",
       "flag": "https://flagcdn.com/ad.svg",
       "color": "orange",
-      "boxes": 9
+      "boxes": 9,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     }
   ],
   "row3": [
@@ -65,25 +151,77 @@
       "name": "Uruguay",
       "flag": "https://flagcdn.com/uy.svg",
       "color": "blue",
-      "boxes": 6
+      "boxes": 6,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Angola",
       "flag": "https://flagcdn.com/ao.svg",
       "color": "green",
-      "boxes": 7
+      "boxes": 7,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "red"
+        },
+        {
+          "id": "4",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Anguilla",
       "flag": "https://flagcdn.com/ai.svg",
       "color": "red",
-      "boxes": 8
+      "boxes": 8,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Antarctica",
       "flag": "https://flagcdn.com/aq.svg",
       "color": "orange",
-      "boxes": 5
+      "boxes": 5,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     }
   ],
   "row4": [
@@ -91,25 +229,81 @@
       "name": "Brazil",
       "flag": "https://flagcdn.com/br.svg",
       "color": "purple",
-      "boxes": 12
+      "boxes": 12,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "red"
+        },
+        {
+          "id": "4",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Canada",
       "flag": "https://flagcdn.com/ca.svg",
       "color": "cyan",
-      "boxes": 9
+      "boxes": 9,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     },
     {
       "name": "China",
       "flag": "https://flagcdn.com/cn.svg",
       "color": "magenta",
-      "boxes": 11
+      "boxes": 11,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Denmark",
       "flag": "https://flagcdn.com/dk.svg",
       "color": "lime",
-      "boxes": 8
+      "boxes": 8,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     }
   ],
   "row5": [
@@ -117,25 +311,81 @@
       "name": "Egypt",
       "flag": "https://flagcdn.com/eg.svg",
       "color": "pink",
-      "boxes": 7
+      "boxes": 7,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     },
     {
       "name": "France",
       "flag": "https://flagcdn.com/fr.svg",
       "color": "grey",
-      "boxes": 10
+      "boxes": 10,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Germany",
       "flag": "https://flagcdn.com/de.svg",
       "color": "lightblue",
-      "boxes": 6
+      "boxes": 6,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "red"
+        },
+        {
+          "id": "4",
+          "color": "blue"
+        }
+      ]
     },
     {
       "name": "Greece",
       "flag": "https://flagcdn.com/gr.svg",
       "color": "darkblue",
-      "boxes": 8
+      "boxes": 8,
+      "offer": [
+        {
+          "id": "1",
+          "color": "red"
+        },
+        {
+          "id": "2",
+          "color": "blue"
+        },
+        {
+          "id": "3",
+          "color": "green"
+        }
+      ]
     }
   ]
 }

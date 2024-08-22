@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./country-city-buttons.component.css'],
 })
 export class CountryCityButtonsComponent implements OnInit {
-  selectedColor: string | null = null;
+  selectedCountry: any = null; // Track the selected country
+  selectedRow: string | null = null; // Track the selected row
   colorMap: { [key: string]: string } = {};
   showExtraRows = false;
 
@@ -18,13 +19,13 @@ export class CountryCityButtonsComponent implements OnInit {
   ngOnInit(): void {
     this.http.get('assets/json/countries.json').subscribe((data) => {
       this.countries = data;
-      console.log(this.countries.row1);
     });
   }
 
-  showColor(row: string, color: string) {
-    this.selectedColor = row;
-    this.colorMap[row] = color;
+  showColor(row: string, country: any) {
+    this.selectedCountry = country; // Set the selected country
+    this.selectedRow = row; // Set the selected row
+    this.colorMap[row] = country.color; // Update the colorMap with the selected country's color
   }
 
   toggleRows() {

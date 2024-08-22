@@ -1,7 +1,7 @@
 <div class="button-container">
   <button
     *ngFor="let country of countries.row1"
-    (click)="showColor('row1', country.color)"
+    (click)="showColor('row1', country)"
     class="country"
   >
     <div style="display: flex; align-items: center">
@@ -12,24 +12,25 @@
   </button>
 </div>
 
+<!-- Display the offers of the selected country in row1 -->
 <div
   style="display: flex; flex-direction: row"
-  *ngIf="selectedColor === 'row1'"
+  *ngIf="selectedCountry && selectedRow === 'row1'"
   class="color-display"
   [ngStyle]="{ 'background-color': colorMap['row1'] }"
 >
   <div
-    *ngFor="let color of countries.row1"
+    *ngFor="let offer of selectedCountry.offer"
     style="width: 100%; height: 100px; border: 1px solid"
   >
-    <div>{{ color.offer.id }}</div>
+    <div>{{ offer.id }}</div>
   </div>
 </div>
 
 <div class="button-container">
   <button
     *ngFor="let country of countries.row2"
-    (click)="showColor('row2', country.color)"
+    (click)="showColor('row2', country)"
     class="country"
   >
     <div style="display: flex; align-items: center">
@@ -40,16 +41,25 @@
   </button>
 </div>
 
+<!-- Display the offers of the selected country in row2 -->
 <div
-  *ngIf="selectedColor === 'row2'"
+  style="display: flex; flex-direction: row"
+  *ngIf="selectedCountry && selectedRow === 'row2'"
   class="color-display"
   [ngStyle]="{ 'background-color': colorMap['row2'] }"
-></div>
+>
+  <div
+    *ngFor="let offer of selectedCountry.offer"
+    style="width: 100%; height: 100px; border: 1px solid"
+  >
+    <div>{{ offer.id }}</div>
+  </div>
+</div>
 
 <div class="button-container">
   <button
     *ngFor="let country of countries.row3"
-    (click)="showColor('row3', country.color)"
+    (click)="showColor('row3', country)"
     class="country"
   >
     <div style="display: flex; align-items: center">
@@ -60,16 +70,25 @@
   </button>
 </div>
 
+<!-- Display the offers of the selected country in row3 -->
 <div
-  *ngIf="selectedColor === 'row3'"
+  style="display: flex; flex-direction: row"
+  *ngIf="selectedCountry && selectedRow === 'row3'"
   class="color-display"
   [ngStyle]="{ 'background-color': colorMap['row3'] }"
-></div>
+>
+  <div
+    *ngFor="let offer of selectedCountry.offer"
+    style="width: 100%; height: 100px; border: 1px solid"
+  >
+    <div>{{ offer.id }}</div>
+  </div>
+</div>
 
-<div class="button-container" *ngIf="showExtraRows">
+<div class="button-container">
   <button
     *ngFor="let country of countries.row4"
-    (click)="showColor('row4', country.color)"
+    (click)="showColor('row4', country)"
     class="country"
   >
     <div style="display: flex; align-items: center">
@@ -80,16 +99,25 @@
   </button>
 </div>
 
+<!-- Display the offers of the selected country in row4 -->
 <div
-  *ngIf="selectedColor === 'row4'"
+  style="display: flex; flex-direction: row"
+  *ngIf="selectedCountry && selectedRow === 'row4'"
   class="color-display"
   [ngStyle]="{ 'background-color': colorMap['row4'] }"
-></div>
+>
+  <div
+    *ngFor="let offer of selectedCountry.offer"
+    style="width: 100%; height: 100px; border: 1px solid"
+  >
+    <div>{{ offer.id }}</div>
+  </div>
+</div>
 
-<div class="button-container" *ngIf="showExtraRows">
+<div class="button-container">
   <button
     *ngFor="let country of countries.row5"
-    (click)="showColor('row5', country.color)"
+    (click)="showColor('row5', country)"
     class="country"
   >
     <div style="display: flex; align-items: center">
@@ -100,11 +128,20 @@
   </button>
 </div>
 
+<!-- Display the offers of the selected country in row5 -->
 <div
-  *ngIf="selectedColor === 'row5'"
+  style="display: flex; flex-direction: row"
+  *ngIf="selectedCountry && selectedRow === 'row5'"
   class="color-display"
   [ngStyle]="{ 'background-color': colorMap['row5'] }"
-></div>
+>
+  <div
+    *ngFor="let offer of selectedCountry.offer"
+    style="width: 100%; height: 100px; border: 1px solid"
+  >
+    <div>{{ offer.id }}</div>
+  </div>
+</div>
 
 <!-- Toggle Button -->
 <button (click)="toggleRows()">
