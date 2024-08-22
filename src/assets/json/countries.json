@@ -1,0 +1,32 @@
+{
+  "row1": [
+    { "name": "Pakistan", "flag": "https://www.mrflag.com/wp-content/uploads/2018/11/Pakistan.png", "color": "red", "boxes": 5 },
+    { "name": "Uzbekistan", "flag": "https://flagcdn.com/uz.svg", "color": "blue", "boxes": 8 },
+    { "name": "Albania", "flag": "https://flagcdn.com/al.svg", "color": "green", "boxes": 6 },
+    { "name": "Algeria", "flag": "https://flagcdn.com/dz.svg", "color": "yellow", "boxes": 7 }
+  ],
+  "row2": [
+    { "name": "Afghanistan", "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg", "color": "blue", "boxes": 10 },
+    { "name": "Al Islands", "flag": "https://flagcdn.com/ax.svg", "color": "green", "boxes": 4 },
+    { "name": "Samoa", "flag": "https://flagcdn.com/as.svg", "color": "red", "boxes": 5 },
+    { "name": "Andorra", "flag": "https://flagcdn.com/ad.svg", "color": "orange", "boxes": 9 }
+  ],
+  "row3": [
+    { "name": "Uruguay", "flag": "https://flagcdn.com/uy.svg", "color": "blue", "boxes": 6 },
+    { "name": "Angola", "flag": "https://flagcdn.com/ao.svg", "color": "green", "boxes": 7 },
+    { "name": "Anguilla", "flag": "https://flagcdn.com/ai.svg", "color": "red", "boxes": 8 },
+    { "name": "Antarctica", "flag": "https://flagcdn.com/aq.svg", "color": "orange", "boxes": 5 }
+  ],
+  "row4": [
+    { "name": "Brazil", "flag": "https://flagcdn.com/br.svg", "color": "purple", "boxes": 12 },
+    { "name": "Canada", "flag": "https://flagcdn.com/ca.svg", "color": "cyan", "boxes": 9 },
+    { "name": "China", "flag": "https://flagcdn.com/cn.svg", "color": "magenta", "boxes": 11 },
+    { "name": "Denmark", "flag": "https://flagcdn.com/dk.svg", "color": "lime", "boxes": 8 }
+  ],
+  "row5": [
+    { "name": "Egypt", "flag": "https://flagcdn.com/eg.svg", "color": "pink", "boxes": 7 },
+    { "name": "France", "flag": "https://flagcdn.com/fr.svg", "color": "grey", "boxes": 10 },
+    { "name": "Germany", "flag": "https://flagcdn.com/de.svg", "color": "lightblue", "boxes": 6 },
+    { "name": "Greece", "flag": "https://flagcdn.com/gr.svg", "color": "darkblue", "boxes": 8 }
+  ]
+}

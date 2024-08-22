@@ -1,0 +1,104 @@
+<div class="button-container">
+  <button
+    *ngFor="let country of countries.row1"
+    (click)="showColor('row1', country.color)"
+    class="country"
+  >
+    <div style="display: flex; align-items: center">
+      <img [src]="country.flag" class="flag" />
+      <span style="margin-left: 10px">{{ country.name }}</span>
+    </div>
+    <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px" />
+  </button>
+</div>
+
+<div
+  *ngIf="selectedColor === 'row1'"
+  class="color-display"
+  [ngStyle]="{ 'background-color': colorMap['row1'] }"
+></div>
+
+<div class="button-container">
+  <button
+    *ngFor="let country of countries.row2"
+    (click)="showColor('row2', country.color)"
+    class="country"
+  >
+    <div style="display: flex; align-items: center">
+      <img [src]="country.flag" class="flag" />
+      <span style="margin-left: 10px">{{ country.name }}</span>
+    </div>
+    <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px" />
+  </button>
+</div>
+
+<div
+  *ngIf="selectedColor === 'row2'"
+  class="color-display"
+  [ngStyle]="{ 'background-color': colorMap['row2'] }"
+></div>
+
+<div class="button-container">
+  <button
+    *ngFor="let country of countries.row3"
+    (click)="showColor('row3', country.color)"
+    class="country"
+  >
+    <div style="display: flex; align-items: center">
+      <img [src]="country.flag" class="flag" />
+      <span style="margin-left: 10px">{{ country.name }}</span>
+    </div>
+    <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px" />
+  </button>
+</div>
+
+<div
+  *ngIf="selectedColor === 'row3'"
+  class="color-display"
+  [ngStyle]="{ 'background-color': colorMap['row3'] }"
+></div>
+
+<div class="button-container" *ngIf="showExtraRows">
+  <button
+    *ngFor="let country of countries.row4"
+    (click)="showColor('row4', country.color)"
+    class="country"
+  >
+    <div style="display: flex; align-items: center">
+      <img [src]="country.flag" class="flag" />
+      <span style="margin-left: 10px">{{ country.name }}</span>
+    </div>
+    <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px" />
+  </button>
+</div>
+
+<div
+  *ngIf="selectedColor === 'row4'"
+  class="color-display"
+  [ngStyle]="{ 'background-color': colorMap['row4'] }"
+></div>
+
+<div class="button-container" *ngIf="showExtraRows">
+  <button
+    *ngFor="let country of countries.row5"
+    (click)="showColor('row5', country.color)"
+    class="country"
+  >
+    <div style="display: flex; align-items: center">
+      <img [src]="country.flag" class="flag" />
+      <span style="margin-left: 10px">{{ country.name }}</span>
+    </div>
+    <img src="../../assets/drop-down.jpg" style="width: 15px; height: 15px" />
+  </button>
+</div>
+
+<div
+  *ngIf="selectedColor === 'row5'"
+  class="color-display"
+  [ngStyle]="{ 'background-color': colorMap['row5'] }"
+></div>
+
+<!-- Toggle Button -->
+<button (click)="toggleRows()">
+  {{ showExtraRows ? "Hide Additional Rows" : "Show Additional Rows" }}
+</button>

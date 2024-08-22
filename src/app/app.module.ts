@@ -30,6 +30,7 @@ import { LogoutModalComponent } from './logout-modal/logout-modal.component';
 import { CardsComponent } from './cards/cards.component';
 import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-modal.component';
 import { PaymentModalComponent } from './payment-modal/payment-modal.component';
+import { CountryCityButtonsComponent } from './country-city-buttons/country-city-buttons.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { PaymentModalComponent } from './payment-modal/payment-modal.component';
     LogoutModalComponent,
     CardsComponent,
     HaveYouUsedModalComponent,
-    PaymentModalComponent
+    PaymentModalComponent,
+    CountryCityButtonsComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,6 +71,6 @@ import { PaymentModalComponent } from './payment-modal/payment-modal.component';
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
