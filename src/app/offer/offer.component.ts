@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devices-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-offer',
@@ -9,15 +9,14 @@ import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devic
 export class OfferComponent implements OnInit {
   @Output() openModalEvent = new EventEmitter<void>();
 
-  constructor(private esimEnabledService: EsimEnabledDevicesServiceService) {}
+  constructor(private route: Router) {}
 
   ngOnInit(): void {}
 
-  openModal(event: Event) {
-    this.esimEnabledService.setModalState(true);
+  isModalVisible = false;
 
-    event.preventDefault(); // Prevent the default anchor tag behavior
-    this.openModalEvent.emit(); // Emit event to parent component
+  openModal() {
+    this.isModalVisible = true;
   }
 
   offer = {
@@ -46,5 +45,9 @@ export class OfferComponent implements OnInit {
 
   togglePanel(index: number) {
     this.panels[index].isOpen = !this.panels[index].isOpen;
+  }
+
+  openCheckout() {
+    this.route.navigate(['payment-modal']);
   }
 }

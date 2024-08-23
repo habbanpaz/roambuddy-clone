@@ -13,13 +13,11 @@ import { EsimEnabledDevicesServiceService } from '../services/esim-enabled-devic
   styleUrls: ['./order-esim.component.css'],
 })
 export class OrderEsimComponent implements OnInit {
-
   selectedTab: number = 1;
   @Output() openModalEvent = new EventEmitter<void>();
 
   openModal(event: Event) {
     this.esimEnabledService.setModalState(true);
-
     event.preventDefault(); // Prevent the default anchor tag behavior
     this.openModalEvent.emit(); // Emit event to parent component
   }
@@ -28,13 +26,7 @@ export class OrderEsimComponent implements OnInit {
     this.selectedTab = tabNumber;
   }
 
-  constructor(
+  constructor(private esimEnabledService: EsimEnabledDevicesServiceService) {}
 
-    private esimEnabledService: EsimEnabledDevicesServiceService
-  ) {}
-
-  ngOnInit(): void {
-  }
-
-  
+  ngOnInit(): void {}
 }

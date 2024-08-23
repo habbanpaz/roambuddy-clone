@@ -31,6 +31,7 @@ import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-m
 import { PaymentModalComponent } from './payment-modal/payment-modal.component';
 import { CountryCardsComponent } from './country-cards/country-cards.component';
 import { OfferComponent } from './offer/offer.component';
+import { UnlockedAndOrderComponent } from './unlocked-and-order/unlocked-and-order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { OfferComponent } from './offer/offer.component';
     PaymentModalComponent,
     CountryCardsComponent,
     OfferComponent,
+    UnlockedAndOrderComponent,
   ],
   imports: [
     BrowserModule,

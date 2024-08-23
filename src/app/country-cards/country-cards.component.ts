@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { OfferComponent } from '../offer/offer.component';
 import { Router } from '@angular/router';
 
 @Component({
@@ -17,11 +15,7 @@ export class CountryCardsComponent implements OnInit {
 
   countries: any = {};
 
-  constructor(
-    private http: HttpClient,
-    private modalService: NgbModal,
-    private route: Router
-  ) {}
+  constructor(private http: HttpClient, private route: Router) {}
 
   ngOnInit(): void {
     this.http.get('assets/json/countries.json').subscribe((data) => {
@@ -29,7 +23,8 @@ export class CountryCardsComponent implements OnInit {
     });
   }
 
-  openOfferModal() {
+  openOffer() {
+    console.log(this.selectedRow);
     this.route.navigate(['offer']);
   }
 

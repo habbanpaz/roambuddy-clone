@@ -81,16 +81,25 @@
           <p>$15</p>
         </div>
         <hr />
-        <p style="text-align: left">for unlocked</p>
 
-        <p style="text-align: left; font-weight: bold; color: #59d25d">
-          <a (click)="openModal($event)">eSIM-enabled devices</a>
-        </p>
+        <app-unlocked-and-order
+          (openModalEvent)="openModal()"
+        ></app-unlocked-and-order>
+        <app-esim-enabled-devices
+          [isVisible]="isModalVisible"
+          (closeModal)="isModalVisible = false"
+        ></app-esim-enabled-devices>
 
-        <button href="#" class="btn green-btn btn-checkout">Buy Now 🛒</button>
+        <button
+          href="#"
+          class="btn green-btn btn-checkout"
+          (click)="openCheckout()"
+        >
+          Buy Now 🛒
+        </button>
 
         <div class="faq-section">
-          <h2>Frequently asked Questions</h2>
+          <h6>Frequently asked Questions</h6>
           <div *ngFor="let panel of panels; let i = index" class="panel">
             <div class="panel-header" (click)="togglePanel(i)">
               {{ panel.title }}
