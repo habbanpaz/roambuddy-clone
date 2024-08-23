@@ -16,11 +16,8 @@
   </p>
 </div>
 
-
-
 <div class="resizable-div">
   <div class="mainTab">
-
     <div class="tabs">
       <a
         class="btn btn-light btn-types"
@@ -44,7 +41,7 @@
   </div>
 
   <div *ngIf="selectedTab === 1" class="country-list">
-    <app-cards></app-cards>
+    <app-country-cards></app-country-cards>
   </div>
 
   <div *ngIf="selectedTab === 2" class="regional-div">
@@ -82,8 +79,5 @@
     </button>
   </div>
 
-  <div *ngIf="selectedTab === 3" class="content-div">
-  </div>
+  <div *ngIf="selectedTab === 3" class="content-div"></div>
 </div>
-
-

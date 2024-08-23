@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CountryCityButtonsComponent } from './country-city-buttons.component';
+import { CountryCardsComponent } from './country-cards.component';
 
 describe('CountryCityButtonsComponent', () => {
-  let component: CountryCityButtonsComponent;
-  let fixture: ComponentFixture<CountryCityButtonsComponent>;
+  let component: CountryCardsComponent;
+  let fixture: ComponentFixture<CountryCardsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CountryCityButtonsComponent ]
-    })
-    .compileComponents();
+      declarations: [CountryCardsComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CountryCityButtonsComponent);
+    fixture = TestBed.createComponent(CountryCardsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

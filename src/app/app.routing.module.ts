@@ -10,63 +10,58 @@ import { OrderEsimPageComponent } from './order-esim-page/order-esim-page.compon
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { PaymentModalComponent } from './payment-modal/payment-modal.component';
+import { OfferComponent } from './offer/offer.component';
 
 const routes: Routes = [
-{
-  path: '',
-  component: MainComponent
-},
-{
-  path: 'order-esim-page',
-  component: OrderEsimPageComponent,
+  {
+    path: '',
+    component: MainComponent,
+  },
+  {
+    path: 'order-esim-page',
+    component: OrderEsimPageComponent,
+  },
+  {
+    path: 'activate-sim',
+    component: ActivateSimComponent,
+  },
+  {
+    path: 'testimonials-page',
+    component: TestimonialsPageComponent,
+  },
+  {
+    path: 'faqs',
+    component: FaqsComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },
+  {
+    path: 'offer',
+    component: OfferComponent,
+    data: { showHeaderFooter: false },
+  },
 
-},
-{
-  path: 'activate-sim',
-  component: ActivateSimComponent
-},
-{
-  path: 'testimonials-page',
-  component: TestimonialsPageComponent
-},
-{
-  path: 'faqs',
-  component: FaqsComponent
-},
-{
-  path: 'contact',
-  component: ContactComponent
-
-},
-
-{
-  path: 'user-login',
-  component: UserLoginComponent
-},
-{
-  path: 'user-home',
-  component: UserHomeComponent
-},
-{
-  path: 'payment-modal',
-  component: PaymentModalComponent   ,
-   data: { showHeaderFooter: false } // Add this line to control visibility
-
-}
-
-]
+  {
+    path: 'user-login',
+    component: UserLoginComponent,
+  },
+  {
+    path: 'user-home',
+    component: UserHomeComponent,
+  },
+  {
+    path: 'payment-modal',
+    component: PaymentModalComponent,
+    data: { showHeaderFooter: false }, // Add this line to control visibility
+  },
+];
 
 @NgModule({
   declarations: [],
 
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports:[
-    RouterModule
-  ]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}

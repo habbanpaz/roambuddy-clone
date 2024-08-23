@@ -6,32 +6,58 @@
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Pakistan",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Pakistan",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "Pakistan",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
-      ],
-      "boxes": 5
+      ]
     },
     {
       "name": "Uzbekistan",
       "flag": "https://flagcdn.com/uz.svg",
       "color": "blue",
-      "boxes": 8,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Uzbekistan",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Uzbekistan",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Uzbekistan",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -39,15 +65,30 @@
       "name": "Albania",
       "flag": "https://flagcdn.com/al.svg",
       "color": "green",
-      "boxes": 6,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Albania",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Albania",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "Albania",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -55,15 +96,30 @@
       "name": "Algeria",
       "flag": "https://flagcdn.com/dz.svg",
       "color": "yellow",
-      "boxes": 7,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Algeria",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Algeria",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "Algeria",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     }
@@ -73,19 +129,30 @@
       "name": "Afghanistan",
       "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
       "color": "blue",
-      "boxes": 10,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Afghanistan",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Afghanistan",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Afghanistan",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -93,19 +160,30 @@
       "name": "Al Islands",
       "flag": "https://flagcdn.com/ax.svg",
       "color": "green",
-      "boxes": 4,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Al Islands",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Al Islands",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Al Islands",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -113,15 +191,30 @@
       "name": "Samoa",
       "flag": "https://flagcdn.com/as.svg",
       "color": "red",
-      "boxes": 5,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Samoa",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Samoa",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "Samoa",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -129,19 +222,30 @@
       "name": "Andorra",
       "flag": "https://flagcdn.com/ad.svg",
       "color": "orange",
-      "boxes": 9,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Andorra",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Andorra",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Andorra",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     }
@@ -151,15 +255,30 @@
       "name": "Uruguay",
       "flag": "https://flagcdn.com/uy.svg",
       "color": "blue",
-      "boxes": 6,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Uruguay",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Uruguay",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "Uruguay",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -167,23 +286,30 @@
       "name": "Angola",
       "flag": "https://flagcdn.com/ao.svg",
       "color": "green",
-      "boxes": 7,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Angola",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Angola",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "red"
-        },
-        {
-          "id": "4",
-          "color": "blue"
+          "color": "green",
+          "name": "Angola",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -191,15 +317,30 @@
       "name": "Anguilla",
       "flag": "https://flagcdn.com/ai.svg",
       "color": "red",
-      "boxes": 8,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Anguilla",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Anguilla",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "Anguilla",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -207,19 +348,30 @@
       "name": "Antarctica",
       "flag": "https://flagcdn.com/aq.svg",
       "color": "orange",
-      "boxes": 5,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Antarctica",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Antarctica",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Antarctica",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     }
@@ -229,23 +381,30 @@
       "name": "Brazil",
       "flag": "https://flagcdn.com/br.svg",
       "color": "purple",
-      "boxes": 12,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Brazil",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Brazil",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "red"
-        },
-        {
-          "id": "4",
-          "color": "blue"
+          "color": "green",
+          "name": "Brazil",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -253,19 +412,30 @@
       "name": "Canada",
       "flag": "https://flagcdn.com/ca.svg",
       "color": "cyan",
-      "boxes": 9,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Canada",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Canada",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Canada",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -273,15 +443,30 @@
       "name": "China",
       "flag": "https://flagcdn.com/cn.svg",
       "color": "magenta",
-      "boxes": 11,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "China",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "China",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "China",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -289,19 +474,30 @@
       "name": "Denmark",
       "flag": "https://flagcdn.com/dk.svg",
       "color": "lime",
-      "boxes": 8,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Denmark",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Denmark",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Denmark",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     }
@@ -311,19 +507,30 @@
       "name": "Egypt",
       "flag": "https://flagcdn.com/eg.svg",
       "color": "pink",
-      "boxes": 7,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Egypt",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Egypt",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Egypt",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -331,15 +538,30 @@
       "name": "France",
       "flag": "https://flagcdn.com/fr.svg",
       "color": "grey",
-      "boxes": 10,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "France",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "France",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
+        },
+        {
+          "id": "3",
+          "color": "green",
+          "name": "France",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -347,23 +569,30 @@
       "name": "Germany",
       "flag": "https://flagcdn.com/de.svg",
       "color": "lightblue",
-      "boxes": 6,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Germany",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Germany",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "red"
-        },
-        {
-          "id": "4",
-          "color": "blue"
+          "color": "green",
+          "name": "Germany",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     },
@@ -371,19 +600,30 @@
       "name": "Greece",
       "flag": "https://flagcdn.com/gr.svg",
       "color": "darkblue",
-      "boxes": 8,
       "offer": [
         {
           "id": "1",
-          "color": "red"
+          "color": "red",
+          "name": "Greece",
+          "internet": "10 GB",
+          "duration": "30 Days",
+          "price": "$50"
         },
         {
           "id": "2",
-          "color": "blue"
+          "color": "blue",
+          "name": "Greece",
+          "internet": "1 GB",
+          "duration": "3 Days",
+          "price": "$5"
         },
         {
           "id": "3",
-          "color": "green"
+          "color": "green",
+          "name": "Greece",
+          "internet": "5 GB",
+          "duration": "15 Days",
+          "price": "$20"
         }
       ]
     }

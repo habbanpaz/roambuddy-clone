@@ -27,12 +27,10 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LogoutModalComponent } from './logout-modal/logout-modal.component';
-import { CardsComponent } from './cards/cards.component';
 import { HaveYouUsedModalComponent } from './have-you-used-modal/have-you-used-modal.component';
 import { PaymentModalComponent } from './payment-modal/payment-modal.component';
-import { CountryCityButtonsComponent } from './country-city-buttons/country-city-buttons.component';
-import { OfferCardComponent } from './offer-card/offer-card.component';
-
+import { CountryCardsComponent } from './country-cards/country-cards.component';
+import { OfferComponent } from './offer/offer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,11 +51,10 @@ import { OfferCardComponent } from './offer-card/offer-card.component';
     UserLoginComponent,
     UserHomeComponent,
     LogoutModalComponent,
-    CardsComponent,
     HaveYouUsedModalComponent,
     PaymentModalComponent,
-    CountryCityButtonsComponent,
-    OfferCardComponent,
+    CountryCardsComponent,
+    OfferComponent,
   ],
   imports: [
     BrowserModule,

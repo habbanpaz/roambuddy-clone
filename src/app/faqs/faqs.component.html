@@ -1,18 +1,18 @@
 <div class="parent">
-    <div class="top">
-        <p style="text-align: center;">LEARN HOW TO GET STARTED</p>
-        <h2 style="text-align: center; margin-top: 30px;">Frequently Asked Questions</h2>
+  <div class="top">
+    <p style="text-align: center">LEARN HOW TO GET STARTED</p>
+    <h2 style="text-align: center; margin-top: 30px">
+      Frequently Asked Questions
+    </h2>
+  </div>
+
+  <div *ngFor="let panel of panels; let i = index" class="panel">
+    <div class="panel-header" (click)="togglePanel(i)">
+      {{ panel.title }}
+      <span>{{ panel.isOpen ? "-" : "+" }}</span>
     </div>
-
-    <div *ngFor="let panel of panels; let i = index" class="panel">
-        <div class="panel-header" (click)="togglePanel(i)">
-          {{ panel.title }}
-          <span>{{ panel.isOpen ? '-' : '+' }}</span>
-        </div>
-        <div class="panel-content" *ngIf="panel.isOpen">
-          {{ panel.content }}
-        </div>
-      </div>
-      
+    <div class="panel-content" *ngIf="panel.isOpen">
+      {{ panel.content }}
+    </div>
+  </div>
 </div>
-

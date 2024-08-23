@@ -1,0 +1,108 @@
+<div class="offer-page-container">
+  <!-- Back to home link -->
+  <div class="back-link">
+    <a href="/">← back to home</a>
+  </div>
+
+  <!-- Main offer details section -->
+  <div class="offer-details">
+    <div class="offer-summary">
+      <div class="offer-summary-left">
+        <div class="left-top">
+          <div left-top-left>
+            <p class="fw-bold fs-5">{{ offer.country }}</p>
+            <p class="fw-bold fs-5">{{ offer.data }}</p>
+          </div>
+          <div class="left-top-right">
+            <div>
+              <p class="fs-5">Validity:</p>
+              <h2 class="validity">{{ offer.validity }}</h2>
+            </div>
+            <div>
+              <p class="fs-5">Data:</p>
+              <h2 class="data">{{ offer.data }}</h2>
+            </div>
+            <div>
+              <p class="fs-5">Data:</p>
+              <h2 class="price">{{ offer.price }}</h2>
+            </div>
+          </div>
+        </div>
+        <h2>Details:</h2>
+        <div class="offer-more-details">
+          <ul>
+            <li>INSTANT DELIVERY BY EMAIL - READY TO CONNECT</li>
+            <li>
+              This is a data-only eSIM. It does not come with a phone number.
+            </li>
+            <li>
+              Simply scan the QR code to download and use the eSIM. No other
+              activation or registration steps needed.
+            </li>
+            <li>One-time prepaid package. No auto-renewals, no contracts.</li>
+            <li>
+              Full data speeds - no daily limits, no throttling. Mobile hotspot
+              is supported.
+            </li>
+            <li>
+              Usable on all unlocked iOS and Android devices supporting eSIM
+              technology. If in doubt, please check the FAQ section.
+            </li>
+            <li>
+              Please start using the eSIM no more than 3 months after purchase.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Works in section -->
+        <h2>Works in :</h2>
+        <div class="works-in">
+          <div class="flag-container">
+            <!-- <img
+              src=""
+              class="flag"
+            /> -->
+            <span>Jordan</span>
+          </div>
+        </div>
+      </div>
+      <div class="offer-summary-right">
+        <div class="space-between">
+          <p>{{ offer.country }} {{ offer.data }} Quantity x 1</p>
+          <p>$15</p>
+        </div>
+        <div class="space-between">
+          <p>E-SIM x 1</p>
+          <p>$15</p>
+        </div>
+        <hr />
+        <div class="space-between">
+          <p class="total">Total {{ offer.total }}</p>
+          <p>$15</p>
+        </div>
+        <hr />
+        <p style="text-align: left">for unlocked</p>
+
+        <p style="text-align: left; font-weight: bold; color: #59d25d">
+          <a (click)="openModal($event)">eSIM-enabled devices</a>
+        </p>
+
+        <button href="#" class="btn green-btn btn-checkout">Buy Now 🛒</button>
+
+        <div class="faq-section">
+          <h2>Frequently asked Questions</h2>
+          <div *ngFor="let panel of panels; let i = index" class="panel">
+            <div class="panel-header" (click)="togglePanel(i)">
+              {{ panel.title }}
+              <span>{{ panel.isOpen ? "-" : "+" }}</span>
+            </div>
+            <div class="panel-content" *ngIf="panel.isOpen">
+              {{ panel.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Offer details -->
+</div>

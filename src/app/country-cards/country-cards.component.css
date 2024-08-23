@@ -1,17 +1,22 @@
-.countries-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* 4 columns */
-  gap: 20px;
-  padding: 20px;
-
-}
-
-.country-item {
+/* color-buttons.component.css */
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
+
+.color-button {
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.color-display {
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  padding: 20px;
+}
+
 
 .country {
   display: flex;
@@ -20,6 +25,7 @@
   width: 100%;
   border-radius: 10px;
   padding: 15px;
+  margin: 10px;
   background-color: #fff;
   border: 1px solid #ccc;
   cursor: pointer;
@@ -27,41 +33,12 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+
 .flag {
-height: 25px;
-width: 40px;}
+  height: 25px;
+  width: 40px;}
 
-.card {
-  margin-top: 10px;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-}
-
-@media (max-width: 1200px) {
-  .countries-container {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns for medium screens */
-  }
-}
-
-@media (max-width: 900px) {
-  .countries-container {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columns for smaller screens */
-  }
-}
-
-@media (max-width: 600px) {
-  .countries-container {
-    grid-template-columns: 1fr;
-    /* 1 column for mobile devices */
-  }
-}
-
-
-
+  
 .offer-card {
   padding: 15px;
   background-color: #fff;
@@ -164,6 +141,3 @@ width: 40px;}
   border-radius: 5px;
 width: 200px;
 }
-
-
-
